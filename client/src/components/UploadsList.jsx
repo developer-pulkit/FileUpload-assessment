@@ -18,19 +18,10 @@ const UploadsList = ({ files }) => {
                 return (
                   <tr>
                     <td>{data.name}</td>
+
                     <td>
                       {data.files.map((file) => {
-                        return (
-                          <video
-                            preload="auto"
-                            width="320"
-                            height="240"
-                            controls
-                          >
-                            <source src={`${BACKEND_URI}${file}`} />
-                            ;Your browser does not support the file tag.
-                          </video>
-                        );
+                        return <td>{file}</td>;
                       })}
                     </td>
                   </tr>

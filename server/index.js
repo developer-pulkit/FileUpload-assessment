@@ -9,7 +9,7 @@ app.use(cors());
 
 const fileRoutes = require("./routes/file");
 
-app.use("/api/v1/media", fileRoutes);
+app.use("/api/v1/file", fileRoutes);
 app.use("/public", express.static(path.join(__dirname, "public")));
 
 const mongodbUri = "mongodb://localhost:27017/uploadproject";
